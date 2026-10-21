@@ -1,0 +1,37 @@
+name: Mi primera automatizacion
+
+
+
+on:
+
+  push:
+
+  workflow_dispatch:
+
+
+
+jobs:
+
+  saludo:
+
+    runs-on: ubuntu-latest
+
+
+
+    steps:
+
+      - name: Mostrar saludo
+
+        run: echo "Hola, mi primera automatizacion funciona!"
+
+
+
+      - name: Mostrar fecha
+
+        run: date
+
+
+
+      - name: Mostrar sistema operativo
+
+        run: uname -a1
